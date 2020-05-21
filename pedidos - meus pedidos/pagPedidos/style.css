@@ -10,11 +10,13 @@ body {
     background-repeat: no-repeat;
     background-size: 90vh;
     background-position: 43% 48px;
+    background-attachment: fixed;
 }
 
-/* Inicio do Header */
+/* Inicio Header */
 
 .top-header {
+    z-index: 1000;
     position: fixed;
     display: flex;
     top: 0px;
@@ -52,4 +54,69 @@ body {
     height: 36px;
 }
 
-/* Fim do Header */
+/* Fim Header */
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 82px;
+}
+
+/* Inicio Container de Pedidos */
+
+.order-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    opacity: 0.95;
+    width: 85vw;
+    margin-bottom: 24px;
+}
+
+.order-box {
+    width: 92%;
+    margin: 17px 0;
+    align-self: center;
+}
+
+.order-user {
+    font-size: 20px;
+    font-weight: lighter;
+    color: #2699FB;
+}
+
+.order-description {
+    margin-top: 14px;
+    padding: 10px 12px;
+    border: 1px solid #2699FB;
+}
+
+span {
+    font-size: 20px;
+    color: #2699FB;
+}
+
+hr {
+    margin: 4px 0;
+    border: 0;
+    clear: both;
+    display: block;
+    width: 100%;               
+    background-color:#2699FB;
+    height: 1px;
+}
+
+.order-location {
+    display: flex;
+    align-items: center;
+    padding-top: 16px;
+}
+
+.order-location img {
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+}
+
+/* Fim Container de Pedidos */
