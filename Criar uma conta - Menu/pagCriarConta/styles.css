@@ -45,3 +45,14 @@ nav {
     margin-left: -40px;
 }
 
+/* Estilização da Section */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../img/bg-crieSuaConta.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
