@@ -44,3 +44,75 @@ nav {
     margin-right: auto;
     margin-left: -40px;
 }
+
+/* Estilização do Main */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 92vh;
+}
+
+/* Estilização da Section */
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 85vw;
+    padding-top: 10px;
+}
+
+/* Estilização da div que contém o id e img */
+.logoId {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+}
+
+.imgId {
+    width: 40px;
+    height: 40px;
+}
+
+.cardId {
+    font-weight: 400;
+    line-height: 24px;
+    color: #2299fb;
+}
+
+/* Estilização do campo que contém as informações */
+.signIn {
+    width: 95%;
+    height: 43px;
+    margin-left: auto;
+    margin-top: 15px;
+    padding-left: 15px;
+    background-color: #fff;
+    border: 1px solid #2299fb;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+::-webkit-input-placeholder {
+    color: #2299fb;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.imgOption {
+    width: 20px;
+    height: 20px;
+}
