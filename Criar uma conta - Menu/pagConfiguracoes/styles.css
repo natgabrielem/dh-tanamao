@@ -51,7 +51,7 @@ main {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 92vh;
+    /* height: 92vh; */
 }
 
 /* Estilização da Section */
@@ -59,7 +59,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 85vw;
-    padding-top: 10px;
+    padding: 15px 0;
 }
 
 /* Estilização da div que contém o id e img */
@@ -98,21 +98,45 @@ main {
     color: #2299fb;
 }
 
+/* Estilização dos campos de pagamentos e gorjeta */
+.opcoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    height: 38px;
+    margin-left: auto;
+    margin-top: 15px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+input[type=radio] {
+    display: none;
+}
 
 .imgOption {
     width: 20px;
     height: 20px;
+    margin-right: 15px;
+}
+
+.opcoes label {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    line-height: 21px;
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+/* Estilo que altera o radbutton quando checked */
+input[type=radio] + label {
+    color: #707070;
+    border: 1px solid #707070;
+}
+
+input[type=radio]:checked + label {
+    border: 1px solid #2299fb;
+    color: #2299fb;
 }
