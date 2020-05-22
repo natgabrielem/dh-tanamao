@@ -140,3 +140,17 @@ input[type=radio]:checked + label {
     border: 1px solid #2299fb;
     color: #2299fb;
 }
+
+/* Estilização dos botões gorjeta */
+.ajuste {
+    display: flex;
+    width: 95%;
+    margin-left: auto;
+}
+.gorjeta {
+    display: flex;
+    width: 56px;
+    height: 23px;
+    margin-right: 8px;
+    margin-left: 0;
+}
