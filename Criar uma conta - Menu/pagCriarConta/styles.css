@@ -8,7 +8,6 @@
 body {
     display: flex;
     flex-direction: column;
-    margin-top: 48px;
 }
 
 /* Estilização da nav */
@@ -52,7 +51,43 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 100vh;
+    padding-top: 48px;
     background-image: url(../img/bg-crieSuaConta.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+/* Estilização do Form */
+.formData {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.signIn {
+    width: 85vw;
+    height: 43px;
+    margin-top: 20px;
+    padding-left: 15px;
+    border: 1px solid #BCE0FD;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+::-webkit-input-placeholder {
+    color: #2299fb;
+}
+
+.buttonData {
+    width: 254px;
+    height: 43px;
+    background-color: #2299fb;
+    color: #fff;
+    border: 1px solid #2299fb;
+    border-radius: 4px;
+    font-size: 18px;
+    line-height: 22px;
+    cursor: pointer;
 }
