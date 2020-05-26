@@ -37,8 +37,10 @@
 
 .back-btn {
     background-color: #2699FB;
+    z-index: 2000;
     opacity: 0.8;
-    margin-top: 6px;
+    padding-top: 6px;
+    height: 48px;
 }
 
 .back-btn img {
