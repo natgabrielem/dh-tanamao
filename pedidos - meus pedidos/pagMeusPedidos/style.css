@@ -3,6 +3,7 @@
     margin: 0;
     border: 0;
     box-sizing: border-box;
+    font-family: 'Century Gothic';
 }
 
 /* Inicio Header */
@@ -61,7 +62,6 @@ main {
 .container {
     display: flex;
     justify-content: center;
-    width: 90vw;
 }
 
 .box {
@@ -113,7 +113,6 @@ p {
 .reorder a {
     text-align: center;
     width: 60px;
-    word-wrap: break-word;
 }
 
 a {
@@ -131,4 +130,45 @@ hr {
     width: 100%;               
     background-color:#2699FB;
     height: 1px;
+}
+
+.center-border {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    main {
+        display: flex;
+        flex-direction: row;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    .center-border {
+        margin-left: 12px;
+        display: flex;
+        width: 1px;
+        height: 100vh;
+        background-color: #2699FB;
+    }
+
+    .left {
+        flex: 3;
+        width: 30%;
+        height: 100vh;
+        overflow: scroll;
+    }
+
+    .right {
+        flex: 9;
+        height: 100vh;
+        width: 70%;
+        overflow: scroll;
+    }
+}
+
+@media (max-width: 1023px) {
+    .container {
+        width: 90vw;
+    }
 }
