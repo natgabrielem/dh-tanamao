@@ -71,34 +71,55 @@ nav .titulo {
     color: #2699fb;
 }
 
-.pedido img{
+.row img{
     width: 10%;
     max-width: 30px;
 }
 
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.row input{
+    width: 50px;
+    height: 30px;
+    border: #2699FB 1px solid;
+    border-radius: 3px;
+}
+
+.row input::placeholder{
+    color: #2699FB;
+}
 /* INFORMAÇÕES DE CONTATO */
 
 .whats{
     width: 80%;
-    display: flex;
-    flex-direction: column;
     margin: 30px 0;
     border: 1px solid #2699fb;
+    border-radius: 3px;
 }
-
-.whats h3{
-    padding: 10px;
-    color: #2699fb;
-}
-
-.whats h3 a{
+.whats a{
     text-decoration: none;
-    color: #2699fb;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    padding: 10px 0;
+    
 }
 
-.whats img{
+.whats h3, .whats p{
+    color: #2699FB;
+}
+
+#whatsRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#whatsRow img{
     width: 40px;
-    max-width: 30px;
 }
 
 /* BOTAO DE CONFIRMAR */
