@@ -3,6 +3,7 @@
     margin: 0;
     border: 0;
     box-sizing: border-box;
+    font-family: 'Century Gothic';
 }
 
 body {
@@ -122,3 +123,22 @@ hr {
 }
 
 /* Fim Container de Pedidos */
+
+@media (min-width: 600px) {
+    body {
+        background-image: url("../img/bg-pedidos.jpg");
+        background-position: 0px;
+        background-size: cover;
+    }
+
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .order-container {
+        width: 350px;
+        margin: 32px 32px;
+    }
+}
