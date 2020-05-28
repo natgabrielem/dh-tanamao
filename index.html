@@ -1,67 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ta na mão</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="/Bem vindo/style.css">
+    <script defer src="/Bem vindo/script.js"></script>
 </head>
-
 <body>
-    <nav>
-        <img class="voltar-botao" src="icons8-voltar-100.png" alt="Voltar">
-        <div class="nav-title">
-            <h1 class="titulo">REQUISITO</h1>
-        </div>
-    </nav>
-    <section class="bg">
-            <div class="form-total">
-                <form class="formulario">
-                        <div class="form-group">
-                            <label for="desc" class="descr">Item</label>
-                            <input type="text" name="nome" class="campo">
-                            <label for="campo">Descrição</label>
-                            <textarea name="campo" cols="50" id="form1" rows="3" class="campo"></textarea>
-                            <label for="nome" id="campo">Quantidade</label>
-                            <input type="text" name="nome" class="campo-qtd">
-                        </div>
-                </form>
-                <button type="button" class="add-campo" onclick="novoItem()">+ Item</button>
-            </div>
-            <div class="pay">
-                <div class="title-pay">
-                    <h1 class="desc-pay">PAGAMENTO</h1>
-                </div>
-                <div class="bt">
-                    <input type="radio" name="pagamento" id="dinheiro" value="Dinheiro">
-                    <label for="dinheiro"><img class="imgPay" src="pilha_dinheiro.png">Dinheiro</label>
-                </div>
-                <div class="bt">
-                    <input type="radio" name="pagamento" id="picpay" value="Pic Pay">
-                    <label for="picpay"><img class="imgPay" src="pic_pay.png">Pic Pay</label>
-                </div>
-                <div class="title-pay">
-                    <h1 class="desc-pay">Gorjeta</h1>
-                </div>
-                <div class="bt">
-                    <input type="radio" name="gorjeta" id="1real" value="1">
-                    <label for="1real">R$ 1</label>
-                </div>
-                <div class="bt">
-                    <input type="radio" name="gorjeta" id="2reais" value="2">
-                    <label for="2reais">R$ 2</label>
-                </div>
-                <div class="bt">
-                    <input type="radio" name="gorjeta" id="3reais" value="3">
-                    <label for="3reais">R$ 3</label>
-                </div>
-            </div>
-            <div class="confirmar">
-                <a href="conf.html"><h1>Confirmar</h1></a>
-            </div>
+    <section class="login">
+        <a href="" id="criarConta">Criar minha conta</a>
+        <input type="email" name="Usuario" id="user" placeholder="Email">
+        <input type="password" name="Senha" id="password" placeholder="Senha">
+        <a href="" id="esqueci">Esqueci minha senha</a>
+        <div class="row">
+            <input type="checkbox" name="Manter Conectado" checked="checked" id="mantConect">
+            <label for="Manter Conectado">Me manter Conectado</label>
+        </div> 
+        <a id="entrar" onclick="login()">Entrar</a>
+           
+    </section>
+    <section class="bntLogin">
+        <a id="bntGoogle">
+            <img src="Bem vindo/icon/google.png" alt="Icone Google">
+            <p>Entrar com o Google</p>
+        </a>
+        <a href="" id="bntFacebook">
+            <img src="Bem vindo/icon/facebook.png" alt="Icone Facebook">
+            <p>Entrar com o Facebook</p>
+        </a>
     </section>
 </body>
-
 </html>

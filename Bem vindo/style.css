@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'century gothic',Arial, sans-serif;;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../assets/img/bg-bemVindo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 90% 100%;
+}
+
+.login{
+    width: 90%;
+    height: 50%;
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+} #criarConta, #entrar{
+    width: 85%;
+    height: 40px;
+    background-color: #2699FB;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 200ms ease-out;
+} #criarConta:active, #entrar:active{
+    background-color: white;
+    border: 1px solid #2699FB;
+    color: #2699FB;
+}
+
+.login input{
+    width: 85%;
+    height: 40px;
+    border: 1px solid #2699FB;
+    border-radius: 5px;
+    color: #2699FB;
+    padding-left: 10px;
+} .login input::placeholder{
+    color: #2699FB;
+    font-size: 18px;
+} #esqueci{
+    color: #2699FB;
+    font-size: 20px;
+    width: 85%;
+    text-decoration: none;
+} .row{
+    width: 85%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+} #mantConect{
+    width: 20px;
+    margin-right: 15px;
+} .row label{
+    width: 80%;
+    color: #2699FB;
+    font-size: 18px;
+}
+
+.bntLogin{
+    width: 90%;
+    height: 110px;
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+} #bntGoogle, #bntFacebook{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    background-color: #2699FB;
+    border-radius: 5px;
+    text-decoration: none;
+} .bntLogin img{
+    height: 80%;
+    margin: 0 5px;
+    border-radius: 5px;
+} .bntLogin p{
+    color: white;
+    font-size: 20px;
+}
