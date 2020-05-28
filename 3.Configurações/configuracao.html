@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +10,10 @@
     <header>
         <nav>
             <div class="goBack">
-                <img src="../../assets/icon/icons8-voltar-100.png" alt="Ícone seta para voltar">
-            </div>
+                <a href="../2.Menu/menu.html">
+                    <img src="../../assets/icon/icons8-voltar-100.png" alt="Ícone seta para voltar">
+                </a>
+                </div>
             <div class="h1">
                 <h1>CONFIGURAÇÕES</h1>
             </div>
@@ -21,7 +23,7 @@
     <main>
         <section class="content">
             <div class="logoId">
-                <img src="../icon/icons8-cartão-de-identificação-100.png" class="imgId" alt="Imagem de cartão pessoal">
+                <img src="../assets/icon/icons8-cartão-de-identificação-100.png" class="imgId" alt="Imagem de cartão pessoal">
                 <h3 class="cardId">Nome</h3>
             </div>
             <input type="text" class="signIn" id="name" placeholder="Matheus Bello" disabled>
@@ -29,7 +31,7 @@
     
         <section class="content">
             <div class="logoId">
-                <img src="../icon/icons8-pedido-entregue-100.png" class="imgId" alt="Imagem identificação no mapa">
+                <img src="../assets/icon/icons8-pedido-entregue-100.png" class="imgId" alt="Imagem identificação no mapa">
                 <h3 class="cardId">Endereço</h3>
             </div>
             <input type="text" class="signIn" id="adress" placeholder="Rua. Logo lá, 123 - Perto de lá 12312-123 / São Paulo - SP" disabled>
@@ -37,7 +39,7 @@
     
         <section class="content">
             <div class="logoId">
-                <img src="../icon/icons8-android-100.png" class="imgId" alt="Imagem de celular">
+                <img src="../assets/icon/icons8-android-100.png" class="imgId" alt="Imagem de celular">
                 <h3 class="cardId">Celular</h3>
             </div>
             <input type="text" class="signIn" id="phone" placeholder="(11)91234-5678" disabled>
@@ -45,29 +47,29 @@
 
         <section class="content">
             <div class="logoId">
-                <img src="../icon/icons8-caixa-registradora-100.png" class="imgId" alt="Imagem de uma caixa registradora">
+                <img src="../assets/icon/icons8-caixa-registradora-100.png" class="imgId" alt="Imagem de uma caixa registradora">
                 <h3 class="cardId">Forma de pagamento</h3>
             </div>
             <div class="opcoes">
                 <input type="radio" name="pagamento" id="dinheiro" value="Dinheiro">
-                <label for="dinheiro"><img class="imgOption" src="../icon/icons8-pilha-de-dinheiro-100.png">Dinheiro</label>
+                <label for="dinheiro"><img class="imgOption" src="../assets/icon/icons8-pilha-de-dinheiro-100.png">Dinheiro</label>
             </div>
             <div class="opcoes">
-                <input type="radio" name="pagamento" id="picpay" value="Pic Pay">
-                <label for="picpay"><img class="imgOption" src="../icon/PIC PAY.png">Pic Pay</label>
+                <input type="radio" name="pagamento" id="picpay" value="Pic Pay" checked="checked">
+                <label for="picpay"><img class="imgOption" src="../assets/icon/PIC PAY.png">Pic Pay</label>
             </div>
         </section>
 
         <section class="content">
             <div class="logoId">
-                <img src="../icon/icons8-orçamento-100.png" class="imgId" alt="Imagem de homem com dinheiro">
+                <img src="../assets/icon/icons8-orçamento-100.png" class="imgId" alt="Imagem de homem com dinheiro">
                 <h3 class="cardId">Gorjeta padrão</h3>
             </div>
 
             <div class="ajuste">
                 
                 <div class="opcoes gorjeta">
-                    <input type="radio" name="gorjeta" id="1real" value="1">
+                    <input type="radio" name="gorjeta" id="1real" value="1" checked="checked">
                     <label for="1real">R$ 1</label>
                 </div>
                 <div class="opcoes gorjeta">
