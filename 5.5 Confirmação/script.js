@@ -1,6 +1,11 @@
 const root = document.querySelector("#root");
 
-const productID = 3; // precisa deixar dinamico
+const queryString = window.location.search;
+const URLParams = new URLSearchParams(queryString);
+
+const productID = URLParams.get('id');
+
+console.log(productID)
 
 const PROD_URL = `https://v2-api.sheety.co/fb4178391bf957b00e2366c59a397b7c/dbTanamao/products/${productID}`;
 
@@ -13,7 +18,6 @@ async function getData() {
     const USER_URL = `https://v2-api.sheety.co/fb4178391bf957b00e2366c59a397b7c/dbTanamao/accounts?cpf=${cpf}`;
 
     let user = await fetch(USER_URL).then(res => res.json());
-    console.log(user.accounts[0].telefone)
 
     let pedidosArr = pedido.split('/');
     let pedidosStr = `<div class="order-description">`;

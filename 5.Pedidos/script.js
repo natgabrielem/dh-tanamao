@@ -26,7 +26,7 @@ async function getProducts() {
     let products = await response.products;
 
     for (let val of products) {
-        const { cep, cpf, endereco, nomeUser, gorjeta, pagamento, pedido } = val;
+        const { cep, cpf, endereco, nomeUser, gorjeta, pagamento, pedido, id } = val;
 
         let distancia = await getDistance(endereco);
 
@@ -45,7 +45,7 @@ async function getProducts() {
         
         root.insertAdjacentHTML('beforeend', 
             `<div class="order-container">
-                <a href="../5.5 Confirmação/confirmacao.html">
+                <a href="../5.5 Confirmação/confirmacao.html?id=${id}">
                 <div class="order-box">
                     <div class="order-info">
                         <h2 class="order-user">${nomeUser}</h2>
