@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Ta na mão</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <nav>
+        <a href="../2.Menu/menu.html">
+            <img class="voltar-botao" src="../assets/icon/icons8-voltar-100.png" alt="Voltar">
+        </a>
+        <div class="nav-title">
+            <h1 class="titulo">REQUISITO</h1>
+        </div>
+    </nav>
+    <section class="bg">
+        <div class="form-total">
+            <form class="formulario">
+                <div class="form-group">
+                    <label for="desc" class="descr">Item</label>
+                    <label for="campo">Descrição</label>
+                    <textarea placeholder='Descrição' name="campo" cols="50" id="form1" rows="3"
+                        class="campo"></textarea>
+                    <label for="nome" id="campo">Quantidade</label>
+                    <input placeholder="Qnt." type="text" name="nome" class="campo-qtd">
+                </div>
+            </form>
+            <button type="button" class="add-campo" onclick="novoItem()">+ Item</button>
+        </div>
+        <div class="pay">
+            <div class="title-pay">
+                <h1 class="desc-pay">PAGAMENTO</h1>
+            </div>
+            <div class="bt">
+                <input type="radio" name="pagamento" id="dinheiro" value="Dinheiro">
+                <label for="dinheiro"><img class="imgPay"
+                        src="../assets/icon/icons8-pilha-de-dinheiro-100.png">Dinheiro</label>
+            </div>
+            <div class="bt">
+                <input checked="checked" type="radio" name="pagamento" id="picpay" value="Pic Pay">
+                <label for="picpay"><img class="imgPay" src="../assets/icon/PIC PAY.png">Pic Pay</label>
+            </div>
+            <div class="title-pay">
+                <h1 class="desc-pay">Gorjeta</h1>
+            </div>
+            <div class="row">
+                <div class="bt2">
+                    <input checked="checked" type="radio" name="gorjeta" id="1real" value="1">
+                    <label for="1real">R$ 1</label>
+                </div>
+                <div class="bt2">
+                    <input type="radio" name="gorjeta" id="2reais" value="2">
+                    <label for="2reais">R$ 2</label>
+                </div>
+                <div class="bt2">
+                    <input type="radio" name="gorjeta" id="3reais" value="3">
+                    <label for="3reais">R$ 3</label>
+                </div>
+            </div>
+        </div>
+        <div class="confirmar">
+            <a href="conf.html">
+                <h1>Confirmar</h1>
+            </a>
+        </div>
+    </section>
+</body>
+
+</html>
