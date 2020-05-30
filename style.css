@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'century gothic',Arial, sans-serif;
+}
+
+body {
+    background-image: url("../assets/img/bg-pedidos.jpg");
+    background-size: 100%;
+    background-position: 43% 48px;
+    background-attachment: fixed;
+}
+
+/* Inicio Header */
+
+.top-header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 48px;
+    background: #2699FB 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.top-header a{
+    width: 40px;
+    height: 90%;
+}.top-header a img{
+    height: 100%;
+}
+.header-title {
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+.top-header h1 {
+    margin-top: 6px;
+    text-align: center;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.back-btn {
+    z-index: 2000;
+    background-color: #2699FB;
+    opacity: 0.8;
+    padding-top: 6px;
+    height: 48px;
+}
+
+.back-btn img {
+    width: 36px;
+    height: 36px;
+}
+
+/* Fim Header */
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 82px;
+}
+
+/* Inicio Container de Pedidos */
+
+.order-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    opacity: 0.95;
+    width: 85vw;
+    margin-bottom: 24px;
+}
+
+.order-container a{
+    text-decoration: none;
+}
+
+.form-total{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+.order-box {
+    width: 92%;
+    margin: 17px 0;
+    margin-left: 15px;
+    align-self: center;
+}
+
+.order-user {
+    font-size: 20px;
+    font-weight: lighter;
+    color: #2699FB;
+}
+
+.order-description {
+    margin-top: 14px;
+    padding: 10px 12px;
+    border: 1px solid #2699FB;
+}
+
+span {
+    font-size: 20px;
+    color: #2699FB;
+}
+
+.order-location {
+    display: flex;
+    align-items: center;
+    padding-top: 16px;
+}
+
+.order-location img {
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+}
+
+/* Fim Container de Pedidos */
+
+/* @media (min-width: 600px) {
+    body {
+        background-image: url("../img/bg-pedidos.jpg");
+        background-position: 0px;
+        background-size: cover;
+    }
+
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .order-container {
+        width: 350px;
+        margin: 32px 32px;
+    }
+} */
