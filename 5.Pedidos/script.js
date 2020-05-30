@@ -76,7 +76,9 @@ async function getDistance(address) {
     let lat1 = Number(localStorage.getItem("lat"));
     let lon1 = Number(localStorage.getItem("lon"));
 
-    const addressURL = encodeURI(`https://api.opencagedata.com/geocode/v1/json?key=9d626913ff1d4a52afaebbfe4a78f78a&q=${address}&pretty=1`);
+    const API_KEY = "9d626913ff1d4a52afaebbfe4a78f78a";
+
+    const addressURL = encodeURI(`https://api.opencagedata.com/geocode/v1/json?key=${API_KEY}&q=${address}&pretty=1`);
     
     let response = await fetch(addressURL).then(res => res.json());
     let results = (response.results[0].annotations.DMS);
