@@ -17,6 +17,23 @@ body{
     background-position: 90% 100%;
 }
 
+@media (min-width: 768px) {
+    body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-image: url('../assets/img/bg-bemVindo.jpg');
+        background-size: 70% 100%;
+        background-repeat: no-repeat;
+        background-position-x: -120%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
 .login{
     width: 90%;
     height: 50%;
@@ -26,7 +43,22 @@ body{
     justify-content: space-evenly;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.9);
-} #criarConta, #entrar{
+} 
+
+@media (min-width:768px) {
+    .login {
+        width: 40%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: 12%;
+        box-shadow: 0px 0px 5px #00000047;
+    } 
+}
+
+#criarConta, #entrar{
     width: 85%;
     height: 40px;
     background-color: #2699FB;
@@ -42,6 +74,11 @@ body{
     background-color: white;
     border: 1px solid #2699FB;
     color: #2699FB;
+}
+
+/* Cursor pointer botão entrar */
+#entrar {
+    cursor: pointer;
 }
 
 .login input{
@@ -80,7 +117,23 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-} #bntGoogle, #bntFacebook{
+} 
+
+@media(min-width: 768px) {
+    .bntLogin {
+        width: 40%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: 12%;
+        padding-top: 87px;
+    }
+}
+
+#bntGoogle, #bntFacebook{
     width: 100%;
     height: 40%;
     display: flex;
@@ -88,7 +141,21 @@ body{
     background-color: #2699FB;
     border-radius: 5px;
     text-decoration: none;
-} .bntLogin img{
+}
+
+@media(min-width: 768px){
+    #bntGoogle, #bntFacebook{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        background-color: #2699FB;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+}
+
+.bntLogin img{
     height: 80%;
     margin: 0 5px;
     border-radius: 5px;

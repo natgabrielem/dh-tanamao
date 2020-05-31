@@ -12,6 +12,6 @@ function login(){
     console.log(localStorage.getItem('user'));
     console.log(localStorage.getItem('password'));
 
-    window.location.href = "../2.Menu/menu.html";
+    window.location.href = "2.Menu/menu.html";
 
 }
