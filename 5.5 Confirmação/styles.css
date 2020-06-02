@@ -95,7 +95,7 @@ nav .titulo {
 /* INFORMAÇÕES DE CONTATO */
 
 .whats{
-    width: 80%;
+    width: 100%;
     margin: 30px 0;
     border: 1px solid #2699fb;
     border-radius: 3px;
@@ -107,6 +107,11 @@ nav .titulo {
     margin-left: 15px;
     padding: 10px 0;
     
+}
+
+.whats p {
+    padding-left: 12px;
+    font-size: 18px;
 }
 
 .whats h3, .whats p{
