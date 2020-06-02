@@ -1,26 +1,24 @@
+textarea{
+    border-radius: 4px;
+}
+
+
 * {
-    padding: 0;
-    margin: 0;
-    border: 0;
     box-sizing: border-box;
     font-family: 'century gothic',Arial, sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
-body {
-    background-image: url("../assets/img/bg-pedidos.jpg");
-    background-repeat: no-repeat;
-    background-size: 90vh;
-    background-position: 43% 48px;
-    background-attachment: fixed;
+body{
+    width: 100vw;
 }
 
-/* Inicio Header */
+/* TITULO E BOTAO PARA VOLTAR*/
 
-.top-header {
-    z-index: 1000;
+nav{
     position: fixed;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     top: 0px;
     left: 0px;
@@ -30,123 +28,187 @@ body {
     opacity: 1;
 }
 
-.top-header a{
-    width: 40px;
-    height: 90%;
-}.top-header a img{
-    height: 100%;
-}
-.header-title {
-    margin-left: 25%;
+.nav-title {
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    justify-content: center; 
 }
 
-.top-header h1 {
+nav .titulo {
     margin-top: 6px;
     text-align: center;
+    font-size: 30px;
     letter-spacing: 0px;
     color: #FFFFFF;
     text-transform: uppercase;
 }
 
-.back-btn {
-    z-index: 2000;
-    background-color: #2699FB;
-    opacity: 0.8;
-    padding-top: 6px;
-    height: 48px;
+.voltar-botao {
+    width: 50px;
+    height: 50px;
 }
 
-.back-btn img {
-    width: 36px;
-    height: 36px;
-}
+/* BACKGROUND */
 
-/* Fim Header */
-
-main {
+.bg{
+    width: 100%;
+    background-image: url('../assets/img/bg-requisito.jpg');
+    background-size: contain;
+    background-position: 0 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    flex-direction: column;
-    margin-top: 82px;
+    margin-top: 7vh;
 }
 
-/* Inicio Container de Pedidos */
+/* FORMULARIO DE COMPRA */
 
-.order-container {
+.form-total{
+    width: 90%;
     display: flex;
     flex-direction: column;
-    background-color: #FFFFFF;
-    opacity: 0.95;
-    width: 85vw;
-    margin-bottom: 24px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px 0;
+    margin: 10px 0;
 }
 
-.order-container a{
-    text-decoration: none;
-}
-.order-box {
-    width: 92%;
-    margin: 17px 0;
-    margin-left: 15px;
-    align-self: center;
+.formulario{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin-left: 10px;
 }
 
-.order-user {
-    font-size: 20px;
-    font-weight: lighter;
-    color: #2699FB;
+#form1::placeholder{
+color: #2699FB;
+padding: 5px 10px;
 }
 
-.order-description {
-    margin-top: 14px;
-    padding: 10px 12px;
+.form-group{
+    width:90%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px 0;
+    /* padding-left: 10px; */
+    color:#2699FB;
+}
+
+.descr{
+    font-size: 25px;
+}
+
+.campo{
     border: 1px solid #2699FB;
+
 }
 
-span {
-    font-size: 20px;
+.campo-qtd{
+    width: 10%;
+    max-width: 30px;
+    border: 1px solid #2699FB;
+} .campo-qtd::placeholder{
     color: #2699FB;
 }
 
-hr {
-    margin: 4px 0;
-    border: 0;
-    clear: both;
-    display: block;
-    width: 100%;               
-    background-color:#2699FB;
-    height: 1px;
+/* CAMPO + ITEM */
+
+.add-campo{
+    width: 100px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid #2699FB;
+    color: #2699FB;
+    margin-left: 10px;
 }
 
-.order-location {
+/* PAGAMENTO E GORJETA */
+
+.pay{
+    width: 90%;
+    color:  #2699FB;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px 0;
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.pay .desc-pay{
+    text-align: center;
+}
+
+.bt {
+    display: flex;
+    width: 90%;
+    height: 38px;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.row{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.bt2 {
     display: flex;
     align-items: center;
-    padding-top: 16px;
+    height: 38px;
 }
 
-.order-location img {
-    width: 40px;
-    height: 40px;
-    margin-right: 12px;
+.desc-pay{
+    padding-top: 10px;
 }
 
-/* Fim Container de Pedidos */
+input[type=radio] {
+    display: none;
+}
 
-@media (min-width: 600px) {
-    body {
-        background-image: url("../img/bg-pedidos.jpg");
-        background-position: 0px;
-        background-size: cover;
-    }
+.imgPay {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+}
 
-    main {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+.bt label {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    line-height: 21px;
+    padding-left: 15px;
+    cursor: pointer;
+}
 
-    .order-container {
-        width: 350px;
-        margin: 32px 32px;
-    }
+/* DEIXA UM DOS CAMPOS DE GORJETA E PAGAMENTO AZUL */
+
+input[type=radio] + label {
+    color: #707070;
+    border: 1px solid #707070;
+}
+
+input[type=radio]:checked + label {
+    border: 1px solid #2299fb;
+    color: #2299fb;
+}
+
+/* BOTAO DE CONFIRMAR */
+
+.confirmar{
+    align-items: center;
+    width: 90%;
+    background-color: #2699FB;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.confirmar a{
+    text-decoration: none;
+    color: white;
 }

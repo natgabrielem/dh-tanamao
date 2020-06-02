@@ -1,6 +1,6 @@
 // cd 6.Requisito
 // json-server --watch db.json 
-const url = 'http://localhost:3000/data';
+const url = 'https://v2-api.sheety.co/fb4178391bf957b00e2366c59a397b7c/dbTanamao/products';
 
 async function sendRequest(e) {
     e.preventDefault();

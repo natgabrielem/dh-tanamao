@@ -7,7 +7,6 @@
     <title>Ta na mão</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
-    <script defer src="api.js"></script>
 </head>
 
 <body>
@@ -25,10 +24,10 @@
                 <div class="form-group">
                     <label for="desc" class="descr">Item</label>
                     <label for="campo">Descrição</label>
-                    <textarea placeholder='Descrição' name="campo" cols="50" class="descricao" rows="3"
+                    <textarea placeholder='Descrição' name="campo" cols="50" id="form1" rows="3"
                         class="campo"></textarea>
                     <label for="nome" id="campo">Quantidade</label>
-                    <input placeholder="Qnt." type="text" name="nome" class="campo-qtd qnt">
+                    <input placeholder="Qnt." type="text" name="nome" class="campo-qtd">
                 </div>
             </form>
             <button type="button" class="add-campo" onclick="novoItem()">+ Item</button>
@@ -38,8 +37,9 @@
                 <h1 class="desc-pay">PAGAMENTO</h1>
             </div>
             <div class="bt">
-                <input type="radio" name="pagamento" id="dinheiro" value="dinheiro">
-                <label for="dinheiro"><img class="imgPay" src="../assets/icon/icons8-pilha-de-dinheiro-100.png">Dinheiro</label>
+                <input type="radio" name="pagamento" id="dinheiro" value="Dinheiro">
+                <label for="dinheiro"><img class="imgPay"
+                        src="../assets/icon/icons8-pilha-de-dinheiro-100.png">Dinheiro</label>
             </div>
             <div class="bt">
                 <input checked="checked" type="radio" name="pagamento" id="picpay" value="Pic Pay">
@@ -64,7 +64,9 @@
             </div>
         </div>
         <div class="confirmar">
-            <button onclick="sendRequest(event)">Confirmar</button>
+            <a href="conf.html">
+                <h1>Confirmar</h1>
+            </a>
         </div>
     </section>
 </body>

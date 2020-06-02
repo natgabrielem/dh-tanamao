@@ -3,11 +3,11 @@ function novoItem(){
     const div = document.createElement("div");
     div.innerHTML = `
         <label for="desc" class="descr">Item</label>
+        <input type="text" name="nome" class="campo">
         <label for="campo">Descrição</label>
-        <textarea placeholder='Descrição' name="campo" cols="50" class="descricao" rows="3"
-            class="campo"></textarea>
+        <textarea name="campo" cols="22" id="form1" rows="3" class="campo"></textarea>
         <label for="nome" id="campo">Quantidade</label>
-        <input placeholder="Qnt." type="text" name="nome" class="campo-qtd qnt">
+        <input type="text" name="nome" class="campo-qtd">
     `;
     div.className = 'form-group';
     form.appendChild(div)
