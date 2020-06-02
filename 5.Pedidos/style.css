@@ -3,11 +3,11 @@
     margin: 0;
     border: 0;
     box-sizing: border-box;
-    font-family: 'Century Gothic';
+    font-family: 'Century Gothic',Arial, sans-serif;
 }
 
 body {
-    background-image: url("../img/bg-pedidos.jpg");
+    background-image: url("img/bg-pedidos.jpg");
     background-repeat: no-repeat;
     background-size: 90vh;
     background-position: 43% 48px;
@@ -20,6 +20,8 @@ body {
     z-index: 1000;
     position: fixed;
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
     top: 0px;
     left: 0px;
     width: 100vw;
@@ -28,20 +30,27 @@ body {
     opacity: 1;
 }
 
-.header-title {
+.top-header a {
+    width: 40px;
+    height: 90%;
     position: absolute;
-    display: flex;
-    width: 100vw;
-    justify-content: center; 
+}
+
+.top-header a img{
+    height: 100%;
+}
+
+.header-title {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .top-header h1 {
-    margin-top: 6px;
     text-align: center;
-    font: Bold 30px/37px "Century Gothic";
     letter-spacing: 0px;
     color: #FFFFFF;
     text-transform: uppercase;
+    font-size: 30px;
 }
 
 .back-btn {
@@ -77,9 +86,13 @@ main {
     margin-bottom: 24px;
 }
 
+.order-container a{
+    text-decoration: none;
+}
 .order-box {
     width: 92%;
     margin: 17px 0;
+    margin-left: 15px;
     align-self: center;
 }
 
@@ -126,7 +139,7 @@ hr {
 
 @media (min-width: 600px) {
     body {
-        background-image: url("../img/bg-pedidos.jpg");
+        background-image: url("img/bg-pedidos.jpg");
         background-position: 0px;
         background-size: cover;
     }

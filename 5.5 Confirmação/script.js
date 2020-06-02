@@ -5,8 +5,6 @@ const URLParams = new URLSearchParams(queryString);
 
 const productID = URLParams.get('id');
 
-console.log(productID)
-
 const PROD_URL = `https://v2-api.sheety.co/fb4178391bf957b00e2366c59a397b7c/dbTanamao/products/${productID}`;
 
 async function getData() {

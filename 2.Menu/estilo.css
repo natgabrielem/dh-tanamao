@@ -3,7 +3,9 @@
     margin: 0;
     padding: 0;
     font-family: 'century gothic',Arial, sans-serif;
-} body{
+} 
+
+body{
     width: 100vw;
 }
 
@@ -14,17 +16,25 @@ nav{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-} nav a{
+} 
+
+nav a{
     width: 40px;
     height: 40px;
-} nav a img {
+} 
+
+nav a img {
     width: 100%;
     height: 100%;
-} .titulo{
-    margin-left: 25%;
+} 
+
+.titulo{
     color:#FFFFFF;
     font-size: 30px;
     margin-top: 6px;
+    text-align: center;
+    width: 100vw;
+
     text-transform: uppercase;
 }    
 
@@ -32,7 +42,9 @@ nav{
     width: 90%;
     height: 90vh;
     margin-top: 15px;
-} .menu ul{
+} 
+
+.menu ul{
     width: 100%;
     height: 100%;
     display: flex;
@@ -40,15 +52,21 @@ nav{
     display: flex;
     align-items: flex-start;
     margin-left: 15px;
-} .menu ul a{
+} 
+
+.menu ul a{
     width: 100%;
     height: 10%;
     border-bottom: #2699FB 1px solid;
     text-decoration: none;
     transition: 200ms;
-} .menu ul a:focus{
+} 
+
+.menu ul a:focus{
     background-color: rgba(211, 211, 211, 0.1);
-} .texto{
+} 
+
+.texto{
     width: 100%;
     height: 100%;
     list-style-type: none;
@@ -56,7 +74,9 @@ nav{
     display: flex;
     align-items: center;
     color: #2699FB;
-} .icone{
+} 
+
+.icone{
     width: 10%;
     max-width: 40px;
     margin-right: 15px;

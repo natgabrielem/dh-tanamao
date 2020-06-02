@@ -3,7 +3,8 @@
     margin: 0;
     border: 0;
     box-sizing: border-box;
-    font-family: 'Century Gothic';
+    
+    font-family: 'Century Gothic', Arial, sans-serif;
 }
 
 /* Inicio Header */
@@ -18,35 +19,33 @@
     height: 48px;
     background: #2699FB 0% 0% no-repeat padding-box;
     opacity: 1;
+    align-items: center;
 }
 
 .header-title {
-    position: absolute;
     display: flex;
-    width: 100vw;
-    justify-content: center; 
+    justify-content: center;
 }
 
 .top-header h1 {
-    margin-top: 6px;
     text-align: center;
-    font: Bold 30px/37px "Century Gothic";
     letter-spacing: 0px;
-    color: #FFFFFF;
+    color: #ffffff;
     text-transform: uppercase;
+    margin: 0 auto;
+    width: 100vw;
+    font-size: 30px;
 }
 
-.back-btn {
-    background-color: #2699FB;
-    z-index: 2000;
-    opacity: 0.8;
-    padding-top: 6px;
-    height: 48px;
+.top-header a{
+    width: 50px;
+    height: 100%;
+    position: absolute;
 }
 
-.back-btn img {
-    width: 36px;
-    height: 36px;
+.top-header a img{
+    height: 100%;
+    width: 100%;
 }
 
 /* Fim Header */
@@ -101,7 +100,7 @@ p {
 .options {
     display: flex;
     justify-content: space-between;
-    padding-top: 12px;
+    padding-top: 32px;
 }
 
 .options div {
