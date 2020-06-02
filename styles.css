@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+
+    font-family: 'century gothic',Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100vw;
+}
+
+/* TITULO E BOTAO PARA VOLTAR*/
+
+nav{
+    position: fixed;
+    display: flex;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 48px;
+    background: #2699FB 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+
+
+.nav-title {
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    justify-content: center; 
+}
+
+nav .titulo {
+    margin-top: 6px;
+    text-align: center;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.voltar-botao {
+    width: 50px;
+    height: 50px;
+}
+
+/* BACKGROUND */
+
+.bg{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7vh;
+}
+
+/* INFORMAÇÕES DO PEDIDO */
+
+.pedido{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+    border-bottom: 1px solid #2699fb;
+}
+
+.pedido h3{
+    padding: 10px;
+    color: #2699fb;
+}
+
+.row img{
+    width: 10%;
+    max-width: 30px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.row input{
+    width: 50px;
+    height: 30px;
+    border: #2699FB 1px solid;
+    border-radius: 3px;
+}
+
+.row input::placeholder{
+    color: #2699FB;
+}
+/* INFORMAÇÕES DE CONTATO */
+
+.whats{
+    width: 80%;
+    margin: 30px 0;
+    border: 1px solid #2699fb;
+    text-align: center;
+}
+.whats a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    padding: 10px 0;
+    
+}
+
+.whats h3, .whats p{
+    color: #2699FB;
+}
+
+#whatsRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#whatsRow img{
+    width: 40px;
+}
+
+/* BOTAO DE CONFIRMAR */
+
+.confirmar{
+    width: 90%;
+    background-color: #2699FB;
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+} .confirmar img{
+    width: 40px; margin-right: 15px;
+}
+
+@media (max-width: 600px) {
+
+    .whats{
+        width: 80%;
+        margin: 30px 0;
+        border: 1px solid #2699fb;
+        text-align: left;
+    }
+
+    #whatsRow{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+}
