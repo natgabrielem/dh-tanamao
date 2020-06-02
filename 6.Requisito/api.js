@@ -1,6 +1,8 @@
 // cd 6.Requisito
 // json-server --watch db.json 
-const url = 'https://v2-api.sheety.co/fb4178391bf957b00e2366c59a397b7c/dbTanamao/products';
+// http://localhost:3000/data
+// https://v2-api.sheety.co/fb4178391bf957b00e2366c59a397b7c/dbTanamao/products
+const url = 'http://localhost:3000/data';
 
 async function sendRequest(e) {
     e.preventDefault();
@@ -13,7 +15,7 @@ async function sendRequest(e) {
     for (i=0; i<= descs.length-1; i++){
         var desc = descs[i].value;
         var qnt = qnts[i].value;
-        user_pedido.push({descricao: desc, quantidade: qnt});
+        user_pedido += `/${desc}/${qnt}`
     }
 
     const user_address = localStorage.getItem('endereco');
@@ -30,7 +32,8 @@ async function sendRequest(e) {
         gorjeta: gorj,
         finalizado: false,
         pagamento: pag,
-        nome: user_name
+        nomeUser: user_name,
+        favorito: false
     }
 
     const request = new Request(url, {

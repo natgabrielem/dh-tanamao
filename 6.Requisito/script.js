@@ -1,13 +1,11 @@
 function novoItem(){
-    const form = document.getElementsByClassName("formulario")[0];
+    const form = document.getElementsByClassName("form-total")[0];
     const div = document.createElement("div");
     div.innerHTML = `
-        <label for="desc" class="descr">Item</label>
-        <input type="text" name="nome" class="campo">
-        <label for="campo">Descrição</label>
-        <textarea name="campo" cols="22" id="form1" rows="3" class="campo"></textarea>
-        <label for="nome" id="campo">Quantidade</label>
-        <input type="text" name="nome" class="campo-qtd">
+        <label for="nome">Item</label>
+        <input placeholder='Nome e Descrição' name="nome" class="descricao"></input>
+        <label for="quantidade" id="campo">Quantidade</label>
+        <input type="text" name="quantidade" class="qnt" value="1">
     `;
     div.className = 'form-group';
     form.appendChild(div)
