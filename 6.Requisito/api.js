@@ -11,11 +11,15 @@ async function sendRequest(e) {
 
     let descs = document.querySelectorAll('.descricao');
     let qnts = document.querySelectorAll('.qnt');
-    var user_pedido = [];
+    var user_pedido = false;
     for (i=0; i<= descs.length-1; i++){
         var desc = descs[i].value;
         var qnt = qnts[i].value;
-        user_pedido += `/${desc}/${qnt}`
+        if (user_pedido == false){
+            user_pedido = `${desc}/${qnt}/`   
+        } else{
+            user_pedido += `/${desc}/${qnt}`
+        }
     }
 
     const user_address = localStorage.getItem('endereco');
