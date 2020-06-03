@@ -1,6 +1,6 @@
 // busca e rederizacao dos meus pedidos
 
-const CPF = 1234567890; // pegar do localstorage
+const CPF = localStorage.getItem('cpf');
 
 const pedidosURL = `https://v2-api.sheety.co/fb4178391bf957b00e2366c59a397b7c/dbTanamao/products?cpf=${CPF}`;
 
