@@ -51,7 +51,7 @@ main {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    /* height: 92vh; */
+    margin-bottom: 20px;
 }
 
 /* Estilização da Section */
@@ -153,4 +153,33 @@ input[type=radio]:checked + label {
     height: 23px;
     margin-right: 8px;
     margin-left: 0;
+}
+
+.buttonData {
+    width: 254px;
+    height: 43px;
+    margin-top: 20px;
+    background-color: #2299fb;
+    color: #fff;
+    border: 1px solid #2299fb;
+    border-radius: 4px;
+    font-size: 18px;
+    line-height: 22px;
+    cursor: pointer;
+    transition: 200ms ease-out;
+}
+
+.buttonData:active {
+    background-color: white;
+    border: 1px solid #2699FB;
+    color: #2699FB;
+}
+
+@media (min-width: 768px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: 60vw;
+        padding: 15px 0;
+    }
 }
