@@ -4,7 +4,6 @@ const CPF = localStorage.getItem('cpf');
 
 const pedidosURL = `https://v2-api.sheety.co/fb4178391bf957b00e2366c59a397b7c/dbTanamao/products?cpf=${CPF}`;
 
-
 // lista os pedidos favoritos
 
 async function getMyOrders() {
@@ -28,7 +27,7 @@ async function getMyOrders() {
             const favDiv = document.querySelector('#fav-box');
 
             favDiv.insertAdjacentHTML('beforeend',
-                `<div class="info">`
+                `<div class="info order${id}">`
                     + pedidosStr + 
                 `</div>
                 <div class="options">
@@ -38,7 +37,7 @@ async function getMyOrders() {
                     </div>
                     <div class="erase">
                         <img class="icon" class="icon" src="../assets/icon/icons8-esvaziar-o-carrinho-de-compras-100.png" alt="Apagar">
-                        <a href="#">Apagar</a>
+                        <a class="delete" onclick="delProduct(${id})" >Apagar</a>
                     </div>
                 </div>
                 <hr />`
@@ -51,7 +50,7 @@ async function getMyOrders() {
             const favDiv = document.querySelector('#active-box');
 
             favDiv.insertAdjacentHTML('beforeend',
-                `<div style="padding-bottom:1px" class="info">
+                `<div style="padding-bottom:1px" class="info order${id}">
                     <p class="order-description">${pedidosStr}</p>
                 </div>
                 <div class="options">
@@ -61,7 +60,7 @@ async function getMyOrders() {
                     </div>
                     <div class="save">
                         <img class="icon" class="icon" src="../assets/icon/icons8-copas-100.png" alt="Salvar">
-                        <a href="#">Salvar</a>
+                        <a onclick="favoriteProduct(${id})" href="#">Salvar</a>
                     </div>
                 </div>
                 <hr />`
@@ -74,7 +73,7 @@ async function getMyOrders() {
             const favDiv = document.querySelector('#finished-box');
 
             favDiv.insertAdjacentHTML('beforeend', 
-                `<div class="info">
+                `<div class="info order${id}">
                     <p class="order-description">${pedidosStr}</p>
                 </div>
                 <div class="options">
@@ -84,11 +83,11 @@ async function getMyOrders() {
                     </div>
                     <div class="erase">
                         <img class="icon" class="icon" src="../assets/icon/icons8-esvaziar-o-carrinho-de-compras-100.png" alt="Apagar">
-                        <a href="#">Apagar</a>
+                        <a onclick="delProduct(${id})">Apagar</a>
                     </div>
                     <div class="save">
                         <img class="icon" class="icon" src="../assets/icon/icons8-copas-100.png" alt="Salvar">
-                        <a href="#">Salvar</a>
+                        <a onclick="favoriteProduct(${id})" href="#">Salvar</a>
                     </div>
                 </div>
                 <hr />`
@@ -98,3 +97,35 @@ async function getMyOrders() {
 }
 
 getMyOrders();
+
+function delProduct(id) {
+    const DELETE_URL = `https://v2-api.sheety.co/fb4178391bf957b00e2366c59a397b7c/dbTanamao/products/${id}`
+
+    fetch(DELETE_URL, {
+        method: "DELETE"
+    }).then((res) => {})
+}
+
+function favoriteProduct(id) {
+    const FAV_URL = `https://v2-api.sheety.co/fb4178391bf957b00e2366c59a397b7c/dbTanamao/products/${id}`
+
+    console.log('agora vai')
+
+    const data = {
+        product: {
+            favorito: true,
+        }
+    }
+
+    fetch(FAV_URL, {
+        method: "PUT",
+        body: JSON.stringify(data),
+        headers: {
+          "Content-Type": "application/json"
+        },
+        credentials: "same-origin"
+    }).then((res) => {
+        console.log('agora foi')
+        console.log('ae porra finalmente')
+    })
+}
