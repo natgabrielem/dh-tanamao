@@ -4,13 +4,13 @@ function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
   } else { 
-    console.log("Geolocation is not supported by this browser.");
+    console.log("Geolocalização não é suportada por este navegador");
   }
 }
 
 function showPosition(position) {
-  localStorage.setItem("lon", position.coords.longitude)
-  localStorage.setItem("lat", position.coords.latitude)
+  sessionStorage.setItem("lon", position.coords.longitude)
+  sessionStorage.setItem("lat", position.coords.latitude)
 }
 
 getLocation();
@@ -72,8 +72,8 @@ getProducts();
 // calculo distância
 
 async function getDistance(address) {
-  let lat1 = Number(localStorage.getItem("lat"));
-  let lon1 = Number(localStorage.getItem("lon"));
+  let lat1 = Number(sessionStorage.getItem("lat"));
+  let lon1 = Number(sessionStorage.getItem("lon"));
 
   const API_KEY = "9d626913ff1d4a52afaebbfe4a78f78a";
 
