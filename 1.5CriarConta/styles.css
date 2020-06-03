@@ -58,22 +58,6 @@ nav {
     background-position: center;
 }
 
-@media (min-width: 768px) {
-    .content {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        height: 100vh;
-        width: 100%;
-        padding-top: 48px;
-        background-image: url(img/bg-crieSuaConta.jpg);
-        background-repeat: no-repeat;
-        background-size: 100% 160%;
-        background-position: top;
-    }
-}
-
 /* Estilização do Form */
 .formData {
     display: flex;
@@ -92,18 +76,6 @@ nav {
     border: 1px solid #BCE0FD;
     font-size: 18px;
     line-height: 22px;
-}
-
-@media (min-width: 768px) {
-    .signIn {
-        width: 50vw;
-        height: 43px;
-        margin-top: 20px;
-        padding-left: 15px;
-        border: 1px solid #BCE0FD;
-        font-size: 18px;
-        line-height: 22px;
-    }
 }
 
 ::-webkit-input-placeholder {
@@ -128,4 +100,30 @@ nav {
     background-color: white;
     border: 1px solid #2699FB;
     color: #2699FB;
+}
+
+@media (min-width: 768px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        padding-top: 48px;
+        background-image: url(img/bg-crieSuaConta.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 160%;
+        background-position: top;
+    }
+
+    .signIn {
+        width: 40vw;
+        height: 43px;
+        margin-top: 20px;
+        padding-left: 15px;
+        border: 1px solid #BCE0FD;
+        font-size: 18px;
+        line-height: 22px;
+    }
 }
