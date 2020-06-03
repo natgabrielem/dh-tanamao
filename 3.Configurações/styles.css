@@ -1,5 +1,6 @@
 * {
-    font-family: 'Century Gothic';
+    
+    font-family: 'century gothic',Arial, sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -92,6 +93,7 @@ main {
     border: 1px solid #2299fb;
     font-size: 18px;
     line-height: 22px;
+    color: #2299fb;
 }
 
 ::-webkit-input-placeholder {

@@ -3,11 +3,11 @@
     margin: 0;
     border: 0;
     box-sizing: border-box;
-    font-family: 'century gothic',Arial, sans-serif;
+    font-family: 'Century Gothic',Arial, sans-serif;
 }
 
 body {
-    background-image: url("../assets/img/bg-pedidos.jpg");
+    background-image: url("img/bg-pedidos.jpg");
     background-repeat: no-repeat;
     background-size: 90vh;
     background-position: 43% 48px;
@@ -30,22 +30,27 @@ body {
     opacity: 1;
 }
 
-.top-header a{
+.top-header a {
     width: 40px;
     height: 90%;
-}.top-header a img{
+    position: absolute;
+}
+
+.top-header a img{
     height: 100%;
 }
+
 .header-title {
-    margin-left: 25%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .top-header h1 {
-    margin-top: 6px;
     text-align: center;
     letter-spacing: 0px;
     color: #FFFFFF;
     text-transform: uppercase;
+    font-size: 30px;
 }
 
 .back-btn {
@@ -134,7 +139,7 @@ hr {
 
 @media (min-width: 600px) {
     body {
-        background-image: url("../img/bg-pedidos.jpg");
+        background-image: url("img/bg-pedidos.jpg");
         background-position: 0px;
         background-size: cover;
     }
