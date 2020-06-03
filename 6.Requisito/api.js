@@ -66,7 +66,6 @@ async function sendRequest(e) {
 
     if (response.status === 200) {
         openModal();
-        alert('O pedido foi cadastrado!');
     }
 }
 

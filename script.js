@@ -30,6 +30,7 @@ async function logIn() {
     if (id1 === id2) {
         const cpf = temp1.cpf;
         localStorage.setItem('cpf', cpf);
+        localStorage.setItem('id', id1);
         window.location.replace('./2.Menu/menu.html');
     }
 
