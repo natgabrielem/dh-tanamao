@@ -109,8 +109,6 @@ function delProduct(id) {
 function favoriteProduct(id) {
     const FAV_URL = `https://v2-api.sheety.co/fb4178391bf957b00e2366c59a397b7c/dbTanamao/products/${id}`
 
-    console.log('agora vai')
-
     const data = {
         product: {
             favorito: true,
@@ -124,8 +122,5 @@ function favoriteProduct(id) {
           "Content-Type": "application/json"
         },
         credentials: "same-origin"
-    }).then((res) => {
-        console.log('agora foi')
-        console.log('ae porra finalmente')
-    })
+    }).then((res) => {})
 }
