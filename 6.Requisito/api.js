@@ -16,7 +16,7 @@ async function sendRequest(e) {
         var desc = descs[i].value;
         var qnt = qnts[i].value;
         if (user_pedido == false){
-            user_pedido = `${desc}/${qnt}/`   
+            user_pedido = `${desc}/${qnt}/`
         } else{
             user_pedido += `/${desc}/${qnt}`
         }
