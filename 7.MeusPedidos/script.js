@@ -30,11 +30,7 @@ async function getMyOrders() {
                 `<div class="info order${id}">`
                     + pedidosStr + 
                 `</div>
-                <div class="options">
-                    <div class="edit">
-                        <img class="icon" src="../assets/icon/icons8-editar-100.png" alt="Editar">
-                        <a href="#">Editar</a>
-                    </div>
+                <div class="options" style="justify-content: center;">
                     <div class="erase">
                         <img class="icon" class="icon" src="../assets/icon/icons8-esvaziar-o-carrinho-de-compras-100.png" alt="Apagar">
                         <a class="delete" onclick="delProduct(${id})" >Apagar</a>
@@ -53,11 +49,7 @@ async function getMyOrders() {
                 `<div style="padding-bottom:1px" class="info order${id}">
                     <p class="order-description">${pedidosStr}</p>
                 </div>
-                <div class="options">
-                    <div class="edit">
-                        <img class="icon" src="../assets/icon/icons8-editar-100.png" alt="Editar">
-                        <a href="#">Editar</a>
-                    </div>
+                <div class="options" style="justify-content: center;">
                     <div class="save">
                         <img class="icon" class="icon" src="../assets/icon/icons8-copas-100.png" alt="Salvar">
                         <a onclick="favoriteProduct(${id})" href="#">Salvar</a>
@@ -103,7 +95,7 @@ function delProduct(id) {
 
     fetch(DELETE_URL, {
         method: "DELETE"
-    }).then((res) => {})
+    }).then((res) => { location.reload() })
 }
 
 function favoriteProduct(id) {
@@ -122,5 +114,5 @@ function favoriteProduct(id) {
           "Content-Type": "application/json"
         },
         credentials: "same-origin"
-    }).then((res) => {})
+    }).then((res) => { location.reload() })
 }

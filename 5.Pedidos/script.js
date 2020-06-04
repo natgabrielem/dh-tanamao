@@ -26,7 +26,12 @@ async function getProducts() {
   let products = await response.products;
 
   for (let val of products) {
-      const { cep, cpf, endereco, nomeUser, gorjeta, pagamento, pedido, id } = val;
+      const { cpf, endereco, gorjeta, pedido, id } = val;
+
+      const AccountURL = `https://v2-api.sheety.co/fb4178391bf957b00e2366c59a397b7c/dbTanamao/accounts?cpf=${cpf}`;
+
+      let userData = await fetch(AccountURL).then(res => res.json());
+      let nome = userData.accounts[0].nome;
 
       let distancia = await getDistance(endereco);
 
@@ -48,7 +53,7 @@ async function getProducts() {
               <a href="../5.5 Confirmação/confirmacao.html?id=${id}">
               <div class="order-box">
                   <div class="order-info">
-                      <h2 class="order-user">${nomeUser}</h2>
+                      <h2 class="order-user">${nome}</h2>
                   </div>` 
                   
                   + pedidosStr + ` 
