@@ -38,7 +38,7 @@ nav a img {
 
 .menu{
     width: 90%;
-    height: 90vh;
+    height: 100vh;
     margin-top: 15px;
 } 
 
@@ -60,10 +60,6 @@ nav a img {
     transition: 200ms;
 } 
 
-.menu ul a:focus{
-    background-color: rgba(211, 211, 211, 0.1);
-} 
-
 .texto{
     width: 100%;
     height: 100%;
@@ -78,4 +74,18 @@ nav a img {
     width: 10%;
     max-width: 40px;
     margin-right: 15px;
+}
+
+@media only screen and (min-width: 750px){
+    main{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .menu{
+        width: 30%;
+    }
+    .menu ul a:hover{
+        background-color: rgba(211, 211, 211, 0.267);
+    } 
 }

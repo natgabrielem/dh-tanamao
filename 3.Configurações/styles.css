@@ -85,19 +85,20 @@ main {
 /* Estilização do campo que contém as informações */
 .signIn {
     width: 95%;
-    height: 43px;
+    height: 48px;
     margin-left: auto;
     margin-top: 15px;
     padding-left: 15px;
     background-color: #fff;
     border: 1px solid #2299fb;
+    border-radius: 5px;
     font-size: 18px;
     line-height: 22px;
     color: #2299fb;
 }
 
 ::-webkit-input-placeholder {
-    color: #2299fb;
+    color: rgb(56, 72, 87);
 }
 
 /* Estilização dos campos de pagamentos e gorjeta */
@@ -130,6 +131,7 @@ input[type=radio] {
     line-height: 21px;
     padding-left: 15px;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 /* Estilo que altera o radbutton quando checked */
@@ -177,13 +179,10 @@ input[type=radio]:checked + label {
     color: #2699FB;
 }
 
-@media (min-width: 768px) {
-    .content {
-        display: flex;
-        flex-direction: column;
-        width: 60vw;
-        padding: 15px 0;
-    }
+@media only screen and (min-width: 750px){
+    .content{
+        width: 40vw;
+    };
 }
 
 /* MODAL */

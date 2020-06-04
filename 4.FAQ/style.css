@@ -7,53 +7,57 @@
 
 body{
     width: 100vw;
+    font-size: 28px;
 }
-
-.navbar{
-    top: 0px;
-    left:0px;
-    width:100vw;
-    height: 48px;
-    background-color:  #2699FB;
-    opacity: 1;
+nav{
+    position: fixed;
     display: flex;
-    align-items: flex-start;
-}
-
-.navbar a {
-    height: 100%;
-}
-
-.botao {
-    width:50px;
-    height: 50px;
-    position: absolute;
-    
-}
-
-.titulo{
-    color:#FFFFFF;
-    font-size: 30px;
-    margin-top: 6px;
-    margin-left: auto;
-    margin-right: auto;
-    letter-spacing: 0px;
-    text-transform: uppercase;
-    text-align: center;
+    align-items: center;
+    justify-content: flex-start;
+    top: 0px;
+    left: 0px;
     width: 100vw;
+    height: 50px;
+    background: #2699FB ;
+} nav a{
+    width: 40px;
+    height: 40px;
+} nav a img{
+    width: 100%;
+    height: 100%;
+} nav .titulo {
+    position: absolute;
+    left: 30%;
+    font-size: 30px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
 }
 
-.duvidas{
-    color:  #2699FB;
-    text-align: justify;
-    padding: 20px;
-    max-width: 90vw;
-    margin-left: 20px;
-    margin-right: 20px;
+section{
+    width: 100%;
+    min-height: 90vh;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+} .duvidas{
+    width: 90%;
+} h2{
+    color: #2699FB;
+    font-size: 1em;
+    margin-bottom: 15px;
+} p{
+    color: rgb(56, 72, 87);
+    font-size: 0.7em;
+    margin-bottom: 5vh;
+    border-bottom: 1px solid #2699FB;
+    padding-bottom: 15px;
+} .last{
+    border-bottom: none;
 }
 
-hr{
-    background-color: #2699FB;
-    max-width: 98vw;
-    margin-left: 5px;
+@media only screen and (min-width: 750px){
+    .duvidas{
+        width: 40vw;
+    };
 }

@@ -14,7 +14,7 @@ body {
 header {
     display: flex;
     width: 100%;
-    height: 48px;
+    height: 50px;
     position: fixed;
     top: 0;
     background-color: #2299fb;
@@ -46,37 +46,40 @@ nav {
 
 /* Estilização da Section */
 .content {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 100vh;
-    padding-top: 48px;
+    margin-top: 50px;
     background-image: url(img/bg-crieSuaConta.jpg);
     background-repeat: no-repeat;
-    background-size: 100% 100vh;
+    background-size: auto 100%;
     background-position: center;
+    background-attachment: fixed;
 }
 
 /* Estilização do Form */
 .formData {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
-    height: 80vh;
+    min-height: 80vh;
 }
 
 .signIn {
     width: 85vw;
-    height: 43px;
+    height: 50px;
     margin-top: 20px;
     padding-left: 15px;
     border: 1px solid #BCE0FD;
     font-size: 18px;
     line-height: 22px;
-    color: #2299fb
+    color: #2299fb;
+    border-radius: 5px;
+    margin-bottom: 3vh;
 }
 
 ::-webkit-input-placeholder {
@@ -85,8 +88,9 @@ nav {
 
 .buttonData {
     width: 254px;
-    height: 43px;
+    height: 60px;
     margin-top: 20px;
+    margin-bottom: 3vh;
     background-color: #2299fb;
     color: #fff;
     border: 1px solid #2299fb;
@@ -103,28 +107,21 @@ nav {
     color: #2699FB;
 }
 
-@media (min-width: 768px) {
+
+@media only screen and (min-width: 750px){
     .content {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        height: 100vh;
-        width: 100%;
-        padding-top: 48px;
-        background-image: url(img/bg-crieSuaConta.jpg);
-        background-repeat: no-repeat;
-        background-size: 100% 160%;
-        background-position: top;
+        width: 100%     ;
+        background-size:  100% auto;
+        background-attachment: fixed;
     }
 
+    .formData {
+        width: 40%;
+    }
+    
     .signIn {
-        width: 40vw;
-        height: 43px;
-        margin-top: 20px;
-        padding-left: 15px;
-        border: 1px solid #BCE0FD;
-        font-size: 18px;
-        line-height: 22px;
+        width: 100%;
+        height: 50px;
+        margin-bottom: 1vh;
     }
 }

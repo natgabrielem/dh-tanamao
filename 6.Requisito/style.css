@@ -48,7 +48,7 @@ nav .titulo {
     width: 100vw;
     min-height: 94vh;
     background-image: url('../assets/img/bg-requisito.jpg');
-    background-size: auto 110%;
+    background-size: auto 100%;
     background-position: 0 0;
     background-repeat: no-repeat;
     display: flex;
@@ -78,7 +78,7 @@ nav .titulo {
 
 .descr{
     color: #2699FB;
-    font-size: 1em;
+    font-size: 0.8em;
     margin-left: 5%;
     margin-top: 15px;
 }
