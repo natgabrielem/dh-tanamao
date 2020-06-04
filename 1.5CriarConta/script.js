@@ -36,5 +36,7 @@ async function submitUserData(ev) {
           "Content-Type": "application/json"
         },
         credentials: "same-origin"
-    }).then((res) => console.log(res.status))
+    }).then((res) => {
+        window.location.replace("../index.html");
+    })
 }
