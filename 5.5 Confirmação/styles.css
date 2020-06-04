@@ -23,7 +23,9 @@ nav{
     opacity: 1;
 }
 
-
+a {
+    z-index: 3000;
+}
 
 .nav-title {
     position: absolute;

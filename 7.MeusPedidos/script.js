@@ -71,7 +71,7 @@ async function getMyOrders() {
                 <div class="options">
                     <div class="reorder">
                         <img class="icon" src="../assets/icon/icons8-refresh-48.png" alt="Refazer Pedido">
-                        <a href="#">Refazer Pedido</a>
+                        <a onclick="remakeProduct(${id})" href="#">Refazer Pedido</a>
                     </div>
                     <div class="erase">
                         <img class="icon" class="icon" src="../assets/icon/icons8-esvaziar-o-carrinho-de-compras-100.png" alt="Apagar">
@@ -108,6 +108,25 @@ function favoriteProduct(id) {
     }
 
     fetch(FAV_URL, {
+        method: "PUT",
+        body: JSON.stringify(data),
+        headers: {
+          "Content-Type": "application/json"
+        },
+        credentials: "same-origin"
+    }).then((res) => { location.reload() })
+}
+
+function remakeProduct(id) {
+    const RMK_URL = `https://v2-api.sheety.co/fb4178391bf957b00e2366c59a397b7c/dbTanamao/products/${id}`
+
+    const data = {
+        product: {
+            finalizado: false,
+        }
+    }
+
+    fetch(RMK_URL, {
         method: "PUT",
         body: JSON.stringify(data),
         headers: {
