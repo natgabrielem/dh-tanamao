@@ -30,14 +30,6 @@ async function getData() {
     root.insertAdjacentHTML('afterbegin', 
         `<div class="pedido">
             ${pedidosStr}
-            <div class="row">
-                <h3>Qual o valor?</h3>
-                <input placeholder="Quant." type="text" name="Quantidade" id="Quant">
-            </div>
-            <div class="row">
-                <img class="delete" src="../assets/icon/icons8-esvaziar-o-carrinho-de-compras-100.png">
-                <h3>Item indisponível</h3>
-            </div>
         </div>
         <div class="whats">
             <a target="_blanket" href="https://api.whatsapp.com/send?phone=${user.accounts[0].telefone}">
@@ -52,3 +44,12 @@ async function getData() {
 }
 
 getData();
+
+        /* <div class="row">
+            <h3>Qual o valor?</h3>
+            <input placeholder="Quant." type="text" name="Quantidade" id="Quant">
+        </div>
+        <div class="row">
+            <img class="delete" src="../assets/icon/icons8-esvaziar-o-carrinho-de-compras-100.png">
+            <h3>Item indisponível</h3>
+        </div> */
