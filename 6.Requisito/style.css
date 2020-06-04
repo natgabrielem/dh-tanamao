@@ -6,7 +6,6 @@
 }
 
 body{
-    width: 100vw;
     font-size: 30px;
 }
 
@@ -27,7 +26,6 @@ nav{
 nav a{
     width: 40px;
     height: 40px;
-    margin-right: 20%;
 } 
 
 nav a img{
@@ -36,6 +34,8 @@ nav a img{
 } 
 
 nav .titulo {
+    position: absolute;
+    left: 30%;
     font-size: 30px;
     letter-spacing: 0px;
     color: #FFFFFF;
@@ -45,14 +45,17 @@ nav .titulo {
 /* BACKGROUND */
 
 .bg{
-    width: 100%;
+    width: 100vw;
+    min-height: 94vh;
     background-image: url('../assets/img/bg-requisito.jpg');
-    background-size: contain;
+    background-size: auto 110%;
     background-position: 0 0;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
+    background-attachment: fixed;
 }
 
 /* FORMULARIO DE COMPRA */
@@ -208,7 +211,6 @@ input[type=radio]:checked + label {
 /* BOTAO DE CONFIRMAR */
 .confirmar{
     width: 90%;
-    margin-bottom: 3vh;
     padding: 10px 0;
     background-color: #2699FB;
     border: none;
@@ -216,6 +218,7 @@ input[type=radio]:checked + label {
     color: white;
     font-size: 0.8em;
     text-align: center;
+    margin-bottom: 3vh;
 }
 
 
@@ -290,3 +293,27 @@ input[type=radio]:checked + label {
       opacity: 1;
     }
   }
+
+
+  @media only screen and (min-width: 750px){
+    .bg{
+        width: 100%;
+        background-size: 100%;
+    }
+    .formulario{
+        width: 50%;
+    }
+    .confirmar{
+        width: 50%;
+    }
+
+    nav .titulo {
+        left: 45%;
+    }
+
+
+
+
+
+
+}
