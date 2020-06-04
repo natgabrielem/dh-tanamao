@@ -17,9 +17,6 @@ function editUserData() {
     const dinheiro = document.getElementById('dinheiro').checked;
     let payOpt = '';
 
-
-    console.log(nome);
-
     if (dinheiro) {
         payOpt = 'dinheiro';
     } else {
@@ -52,11 +49,13 @@ function editUserData() {
     }).then((res) => {
         if (res.status === 200) {
             openModal();
+            setTimeout(closeModal, 5000);
         }
     }).catch(() => {
         modalTxt.style.color = "red";
         modalTxt.innerHTML = "Ocorreu um erro!";
         openModal();
+        setTimeout(closeModal, 5000);
     })
 }
 

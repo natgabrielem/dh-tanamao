@@ -25,14 +25,14 @@ async function sendRequest(e) {
         if (user_pedido == false){
             user_pedido = `${desc}/${qnt}/`
         } else{
-            user_pedido += `/${desc}/${qnt}`
+            user_pedido += `${desc}/${qnt}/`
         }
     }
 
+    user_pedido = user_pedido.substring(0, user_pedido.length - 1);
+
     const gorj = document.querySelector('input[name=gorjeta]:checked').value;
     const pag = document.querySelector('input[name=pagamento]:checked').value;
-
-    // faltou: endereco, cep, nome
 
     const objeto = {
         product: {
@@ -62,10 +62,12 @@ async function sendRequest(e) {
         modalTxt.style.color = "red";
         modalTxt.innerHTML = "Ocorreu um erro!";
         openModal();
+        setTimeout(closeModal, 5000);
     });
 
     if (response.status === 200) {
         openModal();
+        setTimeout(closeModal, 5000);
     }
 }
 
