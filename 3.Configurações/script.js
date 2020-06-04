@@ -65,7 +65,8 @@ window.addEventListener('click', outsideClick);
 
 // Open
 function openModal() {
-  modal.style.display = 'block';
+  modal.style.display = 'flex';
+  modal.style.alignItems = 'center'
 }
 
 // Close

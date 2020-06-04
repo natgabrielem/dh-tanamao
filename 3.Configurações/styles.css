@@ -194,15 +194,16 @@ input[type=radio]:checked + label {
     z-index: 1;
     left: 0;
     top: 0;
-    height: 100%;
+    height: 100vh;
     width: 100%;
-    overflow: auto;
+    overflow: hidden;
     background-color: rgba(0, 0, 0, 0.5);
   }
   
   .modal-content {
     margin: 60% auto;
     width: 90%;
+    max-width: 500px;
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
     animation-name: modalopen;
     animation-duration: var(--modal-duration);
