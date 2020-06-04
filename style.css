@@ -1,316 +1,80 @@
-* {
+*{
     box-sizing: border-box;
-    font-family: 'century gothic',Arial, sans-serif;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    font-family: 'Century Gothic', Arial, sans-serif;
 }
 
 body{
     width: 100vw;
-    font-size: 30px;
 }
 
-/* TITULO E BOTAO PARA VOLTAR*/
-
-nav{
-    position: fixed;
-    display: flex;
-    align-items: center;
-    text-align: center;
+.navbar{
     top: 0px;
-    left: 0px;
-    width: 100vw;
+    left:0px;
+    width:100vw;
+    height: 48px;
+    background-color:  #2699FB;
+    opacity: 1;
+    display: flex;
+    align-items: flex-start;
+}
+
+.navbar a {
+    height: 100%;
+}
+
+.botao {
+    width:50px;
     height: 50px;
-    background: #2699FB ;
-} 
-
-nav a{
-    width: 40px;
-    height: 40px;
-    margin-right: 20%;
-} 
-
-nav a img{
-    width: 100%;
-    height: 100%;
-} 
-
-.nav-title {
     position: absolute;
-    display: flex;
-    width: 100vw;
-    justify-content: center; 
-}
-
-nav .titulo {
-    font-size: 30px;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    text-transform: uppercase;
-}
-
-/* BACKGROUND */
-
-.bg{
-    width: 100%;
-    background-image: url('../assets/img/bg-requisito.jpg');
-    background-size: contain;
-    background-position: 0 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-}
-
-/* FORMULARIO DE COMPRA */
-
-.formulario{
-    width: 100%;
-    margin-top: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.form-total{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.9);
     
-} 
-
-.descr{
-    color: #2699FB;
-    font-size: 1em;
-    margin-left: 5%;
-    margin-top: 15px;
 }
 
-.form-group{
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    margin: 15px 0;
-    margin-left: 5%;
-    color:#2699FB;
-} 
-
-.form-group label{
-    font-size: 0.8em;
-    margin-bottom: 5px;
-} 
-
-.descricao{
-    width: 90%;
-    height: 30px;
-    border: 1px solid #2699FB;
-    margin-bottom: 15px;
-} 
-
-.qnt{
-    width: 10%;
-    max-width: 30px;
-    border: 1px solid #2699FB;
-}
-
-/* CAMPO + ITEM */
-
-.add-campo{
-    width: 10%;
-    height: 5vh;
-    margin: 3vh 0;
-    align-self: flex-start;
-    background-color: white;
-    border: none;
-    margin-left: 25%;
-    color: #2699FB;
-    font-size: 0.7em;
-}
-
-/* PAGAMENTO E GORJETA */
-
-.pay{
-    width: 50%;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 15px 0;
-    margin-bottom: 3vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} 
-
-.pay h1{
-    font-size: 0.8em;
-    color:  #2699FB;
-}
-
-.bt {
-    display: flex;
-    align-items: center;
-    width: 90%;
-    height: 38px;
-    margin-top: 15px;
-}
-
-.row{
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-}
-
-.bt2 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 38px;
-    width: 100%;
-}
-
-.desc-pay{
-    margin: 10px 0;
-}
-
-input[type=radio] {
-    display: none;
-}
-
-.imgPay {
-    width: 20px;
-    height: 20px;
-    margin-right: 15px;
-}
-
-.bt label {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    font-size: 16px;
-    line-height: 21px;
-    padding-left: 15px;
-    cursor: pointer;
-}
-
-.valorGorjeta{
-    font-size: 0.6em;
-    width: 80%;
-    padding: 5px 0;
-    text-align: center;
-}
-
-/* DEIXA UM DOS CAMPOS DE GORJETA E PAGAMENTO AZUL */
-
-input[type=radio] + label {
-    color: #707070;
-    border: 1px solid #707070;
-}
-
-input[type=radio]:checked + label {
-    border: 1px solid #2299fb;
-    color: #2299fb;
-    font-size: 0.6e,;
-}
-
-/* BOTAO DE CONFIRMAR */
-.confirmar{
-    width: 50%;
-    margin-bottom: 3vh;
-    padding: 10px 0;
-    background-color: #2699FB;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-size: 0.8em;
-    text-align: center;
-}
-
-
-/* MODAL */
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  
-  .modal-content {
-    margin: 60% auto;
-    width: 90%;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
-    animation-name: modalopen;
-    animation-duration: var(--modal-duration);
-  }
-  
-  .modal-header h2,
-  .modal-footer h3 {
-    margin: 0;
-    text-align: center;
-  }
-  
-  .modal-header {
-    background: #fff;
-    padding: 15px;
-    color: green;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-  }
-  
-  .modal-body {
-    padding: 10px 20px;
-    background: #fff;
-  }
-  
-  .modal-footer {
-    background: var(--modal-color);
-    padding: 10px;
-    color: #fff;
-    text-align: center;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-  }
-  
-  .close {
-    color: rgb(107, 104, 104);
-    float: right;
+.titulo{
+    color:#FFFFFF;
     font-size: 30px;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  @keyframes modalopen {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-
-  @media (max-width: 600px){
-    .pay{
-        width: 90%;}
-
-    .form-total{
-        width: 90%;
-    }
-
-    .add-campo{
-        width: 25%;
-        margin-left: 5%;
-    }
-
-    .confirmar{
-        width: 90%;}
+    margin-top: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100vw;
 }
+
+section{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.duvidas{
+    align-items: center;
+    color:  #2699FB;
+    text-align: justify;
+    padding: 20px;
+    max-width: 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.duvidas .question{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.duvidas .answer{
+    font-size: 15px;
+}
+
+hr{
+    background-color: #2699FB;
+    max-width: 98vw;
+    margin-left: 5px;
+}
+
+@media (max-width: 600px) {
+    .duvidas{
+        max-width: 90vw;}
+    }

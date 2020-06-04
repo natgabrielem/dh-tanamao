@@ -1,0 +1,31 @@
+* Pedir email e senha para criar conta
+* Configurar endereço ao acessar com google e facebook
+* Exibir a gorjeta na página de pedidos
+* Exibir a avaliação na página de confirmação
+
+#1 - Como criar uma conta?
+    Para criar uma conta é necessário um endereço de e-mail, uma senha e depois concluir o cadastro com endereço, nome e contato.
+
+#2 - Como fazer um pedido?
+    Para fazer um pedido, acesse o link "Preciso de um item". Descreva seu item, não se esqueça de espeficar a marca e o tamanho, escolha a quantidade, defina o modo de pagamento e um valor de gorjeta.
+
+#3 - Como realizar o pagamento?
+    O pagamento pode ser feito em dinheiro ou por meio do aplicativo PicPay, caso prefira o PicPay, o aplicativo será aberto para que possa ser realizado o pagamento.
+
+#4 - Como confiar no meu ajudante ou ajudado?
+    Todos os usuários do aplicativo possuem avaliações feitas por outros usuários, prefira sempre usuários com avaliações altas.
+
+#5 - Como ser um ajudante?
+    Acesse o link "Estou no mercado" no menu principal, escolha um pedido e confirme o pedido.
+
+#6 - Como ver os pedidos já feitos?
+    Acesse o link "Meus pedidos" no menu principal.
+
+#7 - Como salvar um pedido?
+    Acesse o link "Meus pedidos" no menu principal, e clique na opção "salvar" do pedido desejado, agora o pedido aparecerá na seção "Meus Favoritos".
+
+#8 - Como solicitar mais de um produto por peidido?
+    Na página de "Requisito", após concluir a descrição de um item, clique na opção "+Item" faça o processo de solicitação de um produto para cada novo item.
+
+#9 - Como editar minhas informações?
+    Acesse o menu "Configurações" e clique na opção "Editar".
